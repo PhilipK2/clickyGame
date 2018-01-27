@@ -20,6 +20,7 @@ class App extends Component {
           photo.clicked=true;
           this.score++;
         } else {
+          alert("Oops! Try again.");
           this.resetGame(); //otherwise reset
         }
       } else {
