@@ -22,6 +22,11 @@ class App extends Component {
         } else {
           this.resetGame(); //otherwise reset
         }
+      } else {
+        if (this.score == 12) {
+            alert("You win!");
+            this.resetGame();
+        }
       }
       return photo;
     });
@@ -61,7 +66,7 @@ class App extends Component {
   render() {
     return(
       <div>
-    <Title>Image Clicky Game! Score: {this.score}</Title>
+    <Title>React Memory Game. Score: {this.score}</Title>
       <Wrapper>     
         {this.shuffle(this.state.photos).map(photo => (
           
