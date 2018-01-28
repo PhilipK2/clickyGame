@@ -17,3 +17,6 @@ yarn install
 
 # Run app
 yarn start
+```
+
+You can play the game at the live site: https://clicky-game-react.herokuapp.com/
